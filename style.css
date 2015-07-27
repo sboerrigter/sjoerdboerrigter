@@ -1,0 +1,165 @@
+/*
+ * Stylesheet for my personal website Sjoerd Boerrigter (sjoerdboerrigter.nl)
+ *
+ * Author:          Sjoerd Boerrigter
+ * Author URL:      http://www.sjoerdboerrigter.nl/
+ * License:         GNU General Public License v2
+ * License URI:     http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    color: #1f364d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 740px;
+    padding: 20px;
+    margin: 40px auto 0;
+}
+
+img {
+    border-radius: 100%;
+    height: 140px;
+    margin: 0 0 30px 0;
+    width: 140px;
+}
+
+span {
+    display: block;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+span:after,
+span:before {
+    background-color: #1f364d;
+    border-radius: 1px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 0 4px;
+    position: relative;
+    top: -4px;
+    width: 6px;
+}
+
+h1 {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+p {
+    font-family: "rooney-web", serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+
+p.social {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+}
+
+p.social a {
+    background-image: url('images/sprite-x1.png');
+    background-position-y: 0;
+    height: 36px;
+    float: left;
+    margin: 0 2px;
+    width: 36px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    p.social a {
+        background-image: url('images/sprite-x2.png');
+        background-size: 180px 72px;
+    }
+}
+
+p.social a:hover {
+    background-position-y: -36px;
+}
+
+p.social a.twitter {
+    background-position-x: 0;
+}
+
+p.social a.facebook {
+    background-position-x: -36px;
+}
+
+p.social a.linkedin {
+    background-position-x: -72px;
+}
+
+p.social a.github {
+    background-position-x: -108px;
+}
+
+p.social a.dribbble {
+    background-position-x: -144px;
+}
+
+/**
+ * Desktop view
+ */
+ @media(min-width: 980px) {
+     .container {
+         margin: 100px auto 40px;
+     }
+
+     img {
+         height: 280px;
+         margin: 0 0 60px 0;
+         width: 280px;
+     }
+
+     span {
+         font-size: 28px;
+         line-height: 60px;
+     }
+
+     span:after,
+     span:before {
+        top: -8px;
+        height: 4px;
+        margin: 0 8px;
+        width: 10px;
+     }
+
+     h1 {
+         font-size: 48px;
+         letter-spacing: 3px;
+         line-height: 60px;
+         margin: 0 0 60px 0;
+     }
+
+     p {
+         font-size: 24px;
+         line-height: 45px;
+         margin: 0 0 45px 0;
+     }
+
+     p.small {
+         font-size: 20px;
+         line-height: 35px;
+         margin: 0 0 35px 0;
+     }
+
+ }
