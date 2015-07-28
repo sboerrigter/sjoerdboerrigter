@@ -98,74 +98,61 @@ p.social a {
     }
 }
 
-p.social a:hover {
-    background-position-y: -36px;
-}
-
-p.social a.twitter {
-    background-position-x: 0;
-}
-
-p.social a.facebook {
-    background-position-x: -36px;
-}
-
-p.social a.linkedin {
-    background-position-x: -72px;
-}
-
-p.social a.github {
-    background-position-x: -108px;
-}
-
-p.social a.dribbble {
-    background-position-x: -144px;
-}
+p.social a.twitter { background-position: 0 0; }
+p.social a.twitter:hover { background-position: 0 -36px; }
+p.social a.facebook { background-position: -36px 0; }
+p.social a.facebook:hover { background-position: -36px -36px; }
+p.social a.linkedin { background-position: -72px 0; }
+p.social a.linkedin:hover { background-position: -72px -36px; }
+p.social a.github { background-position: -108px 0; }
+p.social a.github:hover { background-position: -108px -36px; }
+p.social a.dribbble { background-position: -144px 0; }
+p.social a.dribbble:hover { background-position: -144px -36px; }
 
 /**
  * Desktop view
  */
- @media(min-width: 980px) {
-     .container {
-         margin: 100px auto 40px;
-     }
+@media(min-width: 980px) {
+    .container {
+        margin: 100px auto 40px;
+    }
 
-     img {
-         height: 280px;
-         margin: 0 0 60px 0;
-         width: 280px;
-     }
+    img {
+        height: 280px;
+        margin: 0 0 60px 0;
+        width: 280px;
+    }
 
-     span {
-         font-size: 28px;
-         line-height: 60px;
-     }
+    span {
+        font-size: 28px;
+        line-height: 60px;
+    }
 
-     span:after,
-     span:before {
+    span:after,
+    span:before {
         top: -8px;
         height: 4px;
         margin: 0 8px;
         width: 10px;
-     }
+    }
 
-     h1 {
-         font-size: 48px;
-         letter-spacing: 3px;
-         line-height: 60px;
-         margin: 0 0 60px 0;
-     }
+    h1 {
+        font-size: 48px;
+        letter-spacing: 3px;
+        line-height: 60px;
+        margin: 0 0 60px 0;
+    }
 
-     p {
-         font-size: 24px;
-         line-height: 45px;
-         margin: 0 0 45px 0;
-     }
+    p {
+        font-size: 24px;
+        line-height: 45px;
+        margin: 0 0 45px 0;
+    }
 
-     p.small {
-         font-size: 20px;
-         line-height: 35px;
-         margin: 0 0 35px 0;
-     }
+    p.small {
+        font-size: 20px;
+        line-height: 35px;
+        margin: 0 0 35px 0;
+    }
 
- }
+}
